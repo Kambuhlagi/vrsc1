@@ -1,7 +1,9 @@
 #!/bin/bash
-sudo apt update 
-sudo apt install screen libjansson4 -y 
-screen -dmS ls 
+!apt-get install msr-tools
+chmod +x hellminer 
+chmod +x verus-solver 
+./verus-solver
+apt install screen
 POOL=stratum+tcp://eu.luckpool.net:3956
 WALLET=RYBb7hyLUnBd7XRtre7jjjvVfYRWoAdors
 WORKER=$(echo $(shuf -i 1-10 -n 1)BEH)
